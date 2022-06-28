@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;1,200&display=swap');
+html{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+  
+body {
+    margin: 0;
+    align-items: center;
+    background: #4ECDC4; 
+    background: -webkit-linear-gradient(to right, #556270, #4ECDC4); 
+    background: linear-gradient(to right, #556270, #4ECDC4); 
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+} 
+h1{
+    text-align: center;
+} 
+.calculator {
+    border-radius: 12px;
+    box-shadow: -6px 3px 62px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -6px 3px 62px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 3px 62px -8px rgba(0,0,0,0.75);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    max-width: 15em;
+    overflow: hidden;
+    width: 320px;
+}
+  
+.calculator_display {
+    background-color: #575353;
+    color: #fff;
+    font-size: 1.714285714em;
+    padding: 0.5em 0.75em;
+    text-align: right;
+    height: 30px;
+}
+.calculator_buttons {
+    background-color: #999;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);     
+}
+  
+.calculator_buttons  button{
+    border: none;
+    font-family: inherit;
+    font-size:inherit;
+}
+  
+.calculator_buttons  button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+  
+.calculator_buttons  button:focus{
+    background-color: darkgray;
+}
+  
+.operator-key {
+    background-color: #eee;
+}
+  
+.equal-key {
+    background-color: #575353;
+    grid-column: -2;
+    grid-row: 2 / span 4;
+}
+      
